@@ -1,11 +1,13 @@
+/*
+ * UCF COP 3330 Summer 2021 Assignment 1 Solutions
+ * Copyright 2021 Charlene Creighton
+ */
+
 package Exercise_3;
 
 import java.util.Scanner;
 
 /*
-Quotation marks are often used to denote the start and end of a string.
-But sometimes we need to print out the quotation marks themselves by using escape characters.
-
 Create a program that prompts for a quote and an author.
 Display the quotation and author as shown in the example output.
 
@@ -15,8 +17,10 @@ Who said it? Obi-Wan Kenobi
 Obi-Wan Kenobi says, "These aren't the droids you're looking for."
 
 Constraints
-Use a single output statement to produce this output, using appropriate string-escaping techniques for quotes.
-If your language supports string interpolation or string substitution, don’t use it for this exercise. Use string concatenation instead.
+Use a single output statement to produce this output,
+using appropriate string-escaping techniques for quotes.
+If your language supports string interpolation or string substitution,
+don’t use it for this exercise. Use string concatenation instead.
  */
 public class ex03 {
 
@@ -32,6 +36,8 @@ public class ex03 {
 
         String author = input.nextLine();
 
-        System.out.printf("%s %s \"%s\"", author, "says,", quote);
+        String output = author + " says, \"" + quote + "\"";
+
+        System.out.print(output);
     }
 }
